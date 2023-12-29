@@ -1,0 +1,12 @@
+package user
+
+import (
+	"github.com/blakeb21/go_playground/view/layout"
+	"github.com/blakeb21/go_playground/model"
+)
+
+templ Show(user model.User) {
+	@layout.Base() {
+		<h1>Hello { user.Email } from the User Page</h1>
+	}
+}

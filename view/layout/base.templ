@@ -1,0 +1,31 @@
+package layout
+
+css bodyClass() {
+	margin: 0;
+}
+
+css headerClass() {
+	background-color: rgb(2 6 23);
+	color: rgb(241 245 249);
+	min-height: 100px;
+	width: 100%;
+	text-align: middle;
+}
+
+css headerText() {
+	padding-left: 1rem;
+}
+
+templ Base() {
+	<html>
+		<head>
+			<title>Go Playground</title>
+		</head>
+		<body class={ bodyClass() }>
+			<header class={ headerClass() }>
+				<h1 class={ headerText() }>Go Playground Header</h1>
+			</header>
+			{ children... }
+		</body>
+	</html>
+}
